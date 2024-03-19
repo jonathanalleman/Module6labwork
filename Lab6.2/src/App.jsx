@@ -5,17 +5,7 @@ import './App.css'
 import BigCats from './BigCats'
 
 function App() {
-  const movieItems = movies.map(movie => (
-    <li>{movie.title}</li>
-    ))
-    
-    return (
-    <div className="MoviesList">
-    <ul>{ movieItems }</ul>
-    </div>
-    )
-}
-
+  const catNames = cats.map()
 //   const [count, setCount] = useState(0)
 
 //   return (
@@ -43,5 +33,5 @@ function App() {
 //     </>
 //   )
 // }
-
+}
 export default App
