@@ -6,18 +6,17 @@ function Calculator() {
     const [secondNumber, setSecondNumber] = useState(0);
     const [operation, setOperation] = useState('+');
     const [result, setResult] = useState('');
+    
     let display = firstNumber + ' ' + operation + ' ' + secondNumber;
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // calculate and set result
         switch (operation) {
             case '+': setResult(firstNumber + secondNumber); break;
             case '-': setResult(firstNumber - secondNumber); break;
             case '*': setResult(firstNumber * secondNumber); break;
             case '/': setResult(firstNumber / secondNumber); break;
         }
-        // reset form fields back to initial state
         setFirstNumber(0);
         setSecondNumber(0);
         setOperation('+');

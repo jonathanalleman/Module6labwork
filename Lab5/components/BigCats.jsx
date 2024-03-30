@@ -78,8 +78,8 @@ function BigCats() {
     }    
 
     const handleAddCat = (newCat) => {
-        //newCat.id = currentCats.length + 1; // not reliable, especially when deleting
-        newCat.id = currentCats.reduce((maxId, cat) => Math.max(maxId, cat.id), 0) + 1; // more reliable
+        
+        newCat.id = currentCats.reduce((maxId, cat) => Math.max(maxId, cat.id), 0) + 1; 
         setCurrentCats([...currentCats, newCat]);
     }
 
